@@ -7,10 +7,8 @@ import { useState } from 'react'
 function App() {
   const [darkMode, setDarkMode] = useState(false)
 
-  const changeMode = () => { }
-
   return (
-    <div className={darkMode ? 'light-mode' : 'dark-mode'}>
+    <div className={darkMode ? 'dark-mode' : 'light-mode'}>
       <div className='darkModeButtonDiv'>
         <button onClick={() => setDarkMode(!darkMode)}>Dark Mode</button>
       </div>

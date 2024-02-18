@@ -16,10 +16,10 @@ const TabsContainer = () => {
                 onChange={handleTabChange}
                 variant="fullWidth"
             >
-                <Tab label='Labs' />
-                <Tab label='Challenges' />
-                <Tab label='Resources' />
-                <Tab label='Projects' />
+                <Tab label='Labs' className="tab-label" />
+                <Tab label='Challenges' className="tab-label" />
+                <Tab label='Resources' className="tab-label" />
+                <Tab label='Projects' className="tab-label" />
             </Tabs>
 
             {/* TAB 1 Contents */}

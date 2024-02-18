@@ -38,17 +38,19 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   width: 500px;
-  height: 500px;
+  height: 700px;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 .tab {
   padding: 7px;
   border-radius: 7px;
   background-color: beige;
-  /* color: black; */
-  border: 0.5px solid gray
+  border: 0.5px solid gray;
+  cursor: pointer;
 }
 
 .nav-searchbar {
@@ -68,12 +70,12 @@ li {
   border-radius: 3px;
 }
 
-.main-searchbar:hover {
-  border: 3px solid black;
-  border-radius: 3px;
-}
-
 .darkModeButtonDiv {
   display: flex;
   justify-content: flex-end;
+}
+
+.tab-label {
+  font-size: 3rem;
+  font-weight: bold;
 }
