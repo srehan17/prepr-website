@@ -3,9 +3,9 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
-import { Button, CardActionArea, CardActions } from '@mui/material'
+import { CardActionArea, CardActions } from '@mui/material'
 
-const CardContainer = ({ image, title, labImage, desc, specs }) => {
+const CardContainer = ({ image, title, labImage, desc, specs, keywords }) => {
     return (
         <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
@@ -23,14 +23,16 @@ const CardContainer = ({ image, title, labImage, desc, specs }) => {
                         {desc}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        {desc}
+                        {specs}
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    Share
-                </Button>
+                <ul className='tabs'>
+                    {keywords.map((k, index) => {
+                        <li key={index} className='tab'>{k}</li>
+                    })}
+                </ul>
             </CardActions>
         </Card>
     )

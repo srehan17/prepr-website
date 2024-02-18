@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Box, Tab, Tabs, Typography } from "@mui/material"
 import CardContainer from './CardContainer'
+import Labs from './Labs'
 
 const TabsContainer = () => {
     const [currentTabIndex, setCurrentTabIndex] = useState(0)
@@ -25,14 +26,7 @@ const TabsContainer = () => {
             {/* TAB 1 Contents */}
             {currentTabIndex === 0 && (
                 <Box sx={{ p: 3 }}>
-                    <Typography variant='h5'>Labs</Typography>
-                    <Typography variant='p'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-                        finibus odio eget orci bibendum, ac hendrerit mi porta. Nullam
-                        volutpat libero tempus leo lacinia ornare. In hac habitasse platea
-                        dictumst. Pellentesque facilisis ex eget vulputate tincidunt.
-                        Curabitur fringilla ultrices commodo.
-                    </Typography>
+                    <Labs />
                 </Box>
             )}
 
