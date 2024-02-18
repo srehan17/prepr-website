@@ -1,5 +1,4 @@
 import React from 'react'
-import Dropdown from 'react-bootstrap/Dropdown'
 
 const NavBar = () => {
     return (
@@ -21,7 +20,7 @@ const NavBar = () => {
             <li><img src="https://preprlabs.org/assets/images/header/inbox-icon.svg" /></li>
             <li><img src="https://preprlabs.org/assets/images/header/bell-icon.svg" /></li>
             <li><img src="https://preprlabs.org/assets/images/header/help-icon.svg" /></li>
-            <li><input type="text" style={{ width: '220px', height: '20px', padding: ' 5px' }} placeholder='Search...' /></li>
+            <li><input type="text" className="nav-searchbar" placeholder='Search...' /></li>
             <li><img style={{ width: '50px' }} src="https://prepr-preprlabs-prod-bucket.s3.ca-central-1.amazonaws.com/front/img/default-user.png" /></li>
         </ul>
     )

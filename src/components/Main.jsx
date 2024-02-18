@@ -14,11 +14,11 @@ const Main = () => {
             <div className='small-font' style={{ marginBottom: '20px' }}>
                 Feel free to add or remove topics to customize your experience!
             </div>
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', height: '40px', border: '1px solid gray', borderRadius: '15px' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', height: '40px', border: '1px solid gray', borderRadius: '15px' }} className='main-searchbar'>
                 <img src={searchIcon} alt="search icon" style={{ width: '30px', padding: '7px', backgroundColor: 'white', cursor: 'pointer' }} />
                 <input style={{ width: '300px', height: '40px', outline: 'none', fontSize: '1.3rem', paddingLeft: '10px' }} />
             </div>
-            <div style={{ fontSize: '2rem', fontWeight: 'bold', width: '500px', marginTop: '20px', textAlign: 'center' }}>Click an interest to narrow your recommendations.</div>
+            <div style={{ fontSize: '2rem', fontWeight: 'bold', width: '500px', marginTop: '50px', textAlign: 'center' }}>Click an interest to narrow your recommendations.</div>
             <div className='tabs'>
                 <div className='tab'>Prototyping</div>
                 <div className='tab'>Influential Presentation</div>

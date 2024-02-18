@@ -33,3 +33,25 @@ li {
   background-color: beige;
   border: 0.5px solid gray
 }
+
+.nav-searchbar {
+  width: 220px;
+  height: 20px;
+  padding: 5px;
+  outline: none
+}
+
+.nav-searchbar:hover {
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.main-searchbar {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.main-searchbar:hover {
+  border: 3px solid black;
+  border-radius: 3px;
+}
