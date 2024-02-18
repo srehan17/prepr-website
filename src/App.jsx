@@ -10,8 +10,8 @@ function App() {
   const changeMode = () => { }
 
   return (
-    <div>
-      <button onClick={() => changeMode}>Dark Mode</button>
+    <div className={darkMode ? 'light-mode' : 'dark-mode'}>
+      <button onClick={() => setDarkMode(!darkMode)}>Dark Mode</button>
       <NavBar />
       <Main />
       <TabsContainer />

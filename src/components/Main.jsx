@@ -1,6 +1,6 @@
 import React from 'react'
 
-const image = require('../images/image2.jpeg')
+const image = require('../images/image3.jpeg')
 const searchIcon = require('../images/search.png')
 
 const Main = () => {
