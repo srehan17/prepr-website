@@ -25,6 +25,9 @@ const CardContainer = ({ image, title, labImage, desc, specs, keywords }) => {
                     <Typography variant="body2" color="text.secondary">
                         {specs}
                     </Typography>
+                    <Typography variant="body3" >
+                        <img src={labImage} />
+                    </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>

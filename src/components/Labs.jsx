@@ -19,13 +19,11 @@ export const labsArray = [
 ]
 
 const Labs = () => {
-
     return (
         <div>
             <h1>Labs</h1>
             <ul>{labsArray.map((lab, index) => {
                 <li key={index}>
-                    hello
                     <CardContainer
                         image={lab.image}
                         title={lab.title}
