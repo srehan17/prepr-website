@@ -2,21 +2,13 @@ import React, { useEffect, useRef, useState } from 'react'
 
 const NavBar = () => {
     const [showDropdown, setShowDropdown] = useState(false)
-
-    const toggleDropdown = () => {
-        setShowDropdown(!showDropdown)
-    }
-
     const hamburgerRef = useRef(null)
     const navMenuRef = useRef(null)
-
     useEffect(() => {
         const hamburger = hamburgerRef.current
-        const navMenu = navMenuRef.current
 
         const mobileMenu = () => {
-            hamburger.classList.toggle("active")
-            navMenu.classList.toggle("active")
+            toggleDropdown()
         }
 
         hamburger.addEventListener("click", mobileMenu)
@@ -24,8 +16,13 @@ const NavBar = () => {
         return () => {
             hamburger.removeEventListener("click", mobileMenu)
         }
-    }, []) // Empty dependency array ensures this effect runs only once on mount
+    }, [])
 
+    const toggleDropdown = () => {
+        setShowDropdown(!showDropdown)
+        const navMenu = navMenuRef.current
+        navMenu.classList.toggle("active")
+    }
     return (
         <div className='nav'> <img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/logoNew.png" style={{ width: '100px' }} alt="prepr" />
 

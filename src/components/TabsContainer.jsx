@@ -26,7 +26,14 @@ const TabsContainer = () => {
             {/* TAB 1 Contents */}
             {currentTabIndex === 0 && (
                 <Box sx={{ p: 3 }}>
-                    <Labs />
+                    {/* <Labs /> */}
+                    <Typography variant='h5'>Labs</Typography>
+                    <Typography variant='p'>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </Typography>
                 </Box>
             )}
 
