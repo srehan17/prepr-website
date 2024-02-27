@@ -10,7 +10,7 @@ function App() {
   return (
     <div className={darkMode ? 'dark-mode' : 'light-mode'}>
       <div className='darkModeButtonDiv'>
-        <button onClick={() => setDarkMode(!darkMode)}>Dark Mode</button>
+        <button onClick={() => setDarkMode(!darkMode)}>{darkMode ? "Light Mode" : "Dark Mode"}</button>
       </div>
       <NavBar />
       <Main />
