@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 
 const NavBar = () => {
     const [showDropdown, setShowDropdown] = useState(false)
+
     const hamburgerRef = useRef(null)
     const navMenuRef = useRef(null)
     useEffect(() => {
@@ -25,21 +26,18 @@ const NavBar = () => {
     }
     return (
         <div className='nav'> <img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/logoNew.png" style={{ width: '100px' }} alt="prepr" />
-
             <ul className='nav-bar' ref={navMenuRef}>
-
                 <li className="nav-item">Explore</li>
-                <li style={{ position: 'relative' }}> <div style={{ display: 'flex', flexDirection: "column", alignItems: 'center', }} className="nav-item dashboard-nav"
-                    onMouseEnter={() => setShowDropdown(true)}
-                // onMouseLeave={() => setShowDropdown(false)}
-                >
-                    <span className="dropdown" >Dashboard</span>
-                    {showDropdown && (<div className="hide" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '5px', position: 'absolute', padding: '10px', backgroundColor: "#fff", marginTop: '25px', border: '0.1px solid gray' }}
-                        onMouseEnter={() => setShowDropdown(true)}
-                        onMouseLeave={() => setShowDropdown(false)}
-                    >
-                        <img src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/user.png" style={{ width: '25px', height: 'auto' }} /><span style={{ fontSize: '0.9rem' }}>User Dashboard</span></div>)}
-                </div>
+                <li style={{ position: 'relative' }} className="nav-item dashboard-nav dropdown">
+                    <div>Dashboard</div>
+                    <div>
+                        <div className="dropdown-content">
+                            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                                <img width='30px' src="https://d3f06rtlkr354b.cloudfront.net/public/front/img/user.png" />
+                                <span>User Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
                 </li >
                 <li className="nav-item">My Challenges</li>
                 <li className="nav-item">My Labs</li>
